@@ -12,10 +12,6 @@ When(/^user enters username and password$/, async () => {
  });
 
 
-// When(/^user enters (.*) and (.*)$/, async (username, password) => {
-//     await $('#username').setValue(username)
-//     await $('#password').setValue(password)
-// });
 
 
 When(/^clicks on login button$/, async () => {
@@ -28,8 +24,3 @@ Then(/^user is navigated to the home page$/, async () => {
      await expect($('#flash')).toHaveText(expect.stringContaining('You logged into a secure area!'));
      
  });
-
-// Then(/^this (.*) is displayed$/, async (message) => {
-
-//     await expect($('#flash')).toHaveTextContaining(message)
-// });
